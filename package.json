@@ -1,6 +1,6 @@
 {
-  "name": "flickity",
-  "version": "3.0.0",
+  "name": "flickity-module",
+  "version": "0.1.0",
   "description": "Touch, responsive, flickable carousels",
   "main": "js/index.js",
   "style": "css/flickity.css",
@@ -10,15 +10,15 @@
     "lintJson": "node bin/lint-json.js",
     "lintCss": "npx stylelint '**/*.css'",
     "lint": "npm run lintJson && npm run lintJs && npm run lintCss",
-    "dist": "npm run bundleCss && npm run bundleJs",
-    "bundleCss": "cp css/flickity.css dist/flickity.css && node bin/bundle-css.js",
-    "bundleJs": "node bin/bundle-js.js",
+    "dist": "npm run bundle:css && npm run bundle:js",
+    "bundle:css": "cp css/flickity.css dist/flickity.css && node bin/bundle-css.js",
+    "bundle:js": "node bin/bundle-js.js",
     "version": "node bin/version.js && npm run dist && git add -A css js dist"
   },
   "dependencies": {
     "ev-emitter": "^2.1.2",
     "fizzy-ui-utils": "^3.0.0",
-    "get-size": "^3.0.0",
+    "get-size-module": "^0.1.1",
     "imagesloaded": "^5.0.0",
     "unidragger": "^3.0.1"
   },
@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/metafizzy/flickity.git"
+    "url": "git://github.com/akbaruddin/flickity-module.git"
   },
   "keywords": [
     "touch",
@@ -49,7 +49,7 @@
   "author": "Metafizzy",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/metafizzy/flickity/issues"
+    "url": "https://github.com/akbaruddin/flickity-module/issues"
   },
   "homepage": "https://flickity.metafizzy.co",
   "directories": {

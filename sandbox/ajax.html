@@ -24,7 +24,7 @@
 
   <div class="gallery"></div>
 
-<script src="../node_modules/get-size/get-size.js"></script>
+<script src="../node_modules/get-size-module/get-size.js"></script>
 <script src="../node_modules/ev-emitter/ev-emitter.js"></script>
 <script src="../node_modules/unidragger/unidragger.js"></script>
 <script src="../node_modules/fizzy-ui-utils/utils.js"></script>
@@ -47,7 +47,7 @@ window.onajaxload = function({ items }) {
   gallery.innerHTML = items.map( ( item ) => {
     return `<div class="gallery-cell"><img src="${item.media.m}" /></div>`;
   } ).join(' ');
-  
+
   new Flickity( gallery, {
     freeScroll: true,
     friction: 0.2,

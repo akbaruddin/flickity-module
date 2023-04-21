@@ -7,7 +7,7 @@
     module.exports = factory(
         window,
         require('ev-emitter'),
-        require('get-size'),
+        require('get-size-module'),
         require('fizzy-ui-utils'),
         require('./cell'),
         require('./slide'),

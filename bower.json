@@ -1,5 +1,5 @@
 {
-  "name": "flickity",
+  "name": "flickity-module",
   "description": "Touch, responsive, flickable carousels",
   "main": [
     "js/index.js",
@@ -8,7 +8,7 @@
   "dependencies": {
     "ev-emitter": "^2.1.2",
     "fizzy-ui-utils": "^3.0.0",
-    "get-size": "^3.0.0",
+    "get-size-module": "^0.1.1",
     "unidragger": "^3.0.1"
   },
   "devDependencies": {

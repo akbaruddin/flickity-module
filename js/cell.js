@@ -3,7 +3,7 @@
   // universal module definition
   if ( typeof module == 'object' && module.exports ) {
     // CommonJS
-    module.exports = factory( require('get-size') );
+    module.exports = factory( require('get-size-module') );
   } else {
     // browser global
     window.Flickity = window.Flickity || {};

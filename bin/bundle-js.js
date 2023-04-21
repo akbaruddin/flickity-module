@@ -14,7 +14,7 @@ let jsPaths = indexContent.match( /require\('([.\-/\w]+)'\)/gi )
 let paths = [
   'node_modules/jquery-bridget/jquery-bridget.js',
   'node_modules/ev-emitter/ev-emitter.js',
-  'node_modules/get-size/get-size.js',
+  'node_modules/get-size-module/get-size.js',
   'node_modules/fizzy-ui-utils/utils.js',
   'node_modules/unidragger/unidragger.js',
   'node_modules/imagesloaded/imagesloaded.js',
